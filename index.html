@@ -10,19 +10,31 @@ and open the template in the editor.
   | This project is open source: https://github.com/alwaysluxury/basic-html-website
 -->
 
+To help you troubleshoot your HTML file, here are some steps you can follow to ensure it runs properly. I will also point out potential issues and provide corrections where necessary.
+
+### Step-by-Step Troubleshooting
+
+1. **Ensure all files are correctly referenced**: Make sure that the `bulma.min.css`, `style.css`, and `script.js` files are in the correct paths as specified in the `<link>` and `<script>` tags.
+
+2. **Check for correct syntax**: Ensure that all HTML tags are properly closed and nested.
+
+3. **Check console for errors**: Open the developer tools in your browser (F12 or right-click and select "Inspect") and check the console for any errors.
+
+4. **Use correct IDs for elements**: Ensure that IDs used in the JavaScript match those in your HTML.
+
+Here is a revised version of your HTML file with some corrections and improvements:
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI ASSIST</title>
+    <title>(Bot Name)</title>
     <link rel="stylesheet" href="assets/css/bulma.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tippy.js@6/animations/scale.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -30,11 +42,9 @@ and open the template in the editor.
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <script src="assets/js/jquery-3.6.0.js"></script>
   </head>
   <body>
-    
     <!-- Back To Top Start -->
     <a id="backtotop" data-tippy-content="Back To Top.">
       <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
@@ -42,29 +52,13 @@ and open the template in the editor.
     <!-- Back To Top End -->
 
     <!-- Navbar Start -->
-   
-    <nav
-      class="navbar is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand mt-2 mb-2">
-       
-          
-       
-
-          <!-- or if you want to use image -->
-          <!-- <img
-            src="image link or path"
-            width="112"
-            height="28"
-          /> -->
-
+        <!-- Brand or logo can be placed here -->
         <a
           role="button"
           class="navbar-burger has-text-white"
-          data-target="navMenu"
+          data-target="navbarBasicExample"
           aria-label="menu"
           aria-expanded="false"
         >
@@ -73,93 +67,54 @@ and open the template in the editor.
           <span aria-hidden="true"></span>
         </a>
       </div>
-
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a href="#" class="navbar-item is-tab">
-            Home
-          </a>
-
-          <a href="#features" class="navbar-item is-tab">
-            Features
-          </a>
+          <a href="#" class="navbar-item is-tab">Home</a>
+          <a href="#features" class="navbar-item is-tab">Features</a>
         </div>
-
         <div class="navbar-end">
           <a href="https://discord.gg/luxurydev" class="navbar-item is-tab" target="_blank">
             <i class="fa-brands fa-discord"></i>
           </a>
-
           <a href="https://github.com/alwaysluxury" class="navbar-item is-tab" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
-
-          
         </div>
       </div>
     </nav>
-      
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
-      
     <section class="hero bg-base is-fullheight">
-      
       <div class="hero-body">
-        
         <div class="">
           <div class="columns">
-            
-            
             <div class="column mr-6 mt-12" data-aos="fade-up">
               <p class="title has-text-white has-text-weight-bold" style="font-family: 'Request Coffee', sans-serif">
-                AI ASSIST
+                (Bot Name)
               </p>
-              <p class="subtitle has-text-grey-light is-size-6 mt-3">
-                Automation of L1 Cases
-              </p>
-              
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">(Mini Bot Info)</p>
               <div class="buttons">
-               
-<!--                 <button class="tooltip">
- <i class="fa-brands fa-discord"></i>
+                <button class="tooltip">
+                  <i class="fa-brands fa-discord"></i>
                   <strong style="color: #FFF"> Add To Discord</strong>
-</button> -->
-                
-  
-            
-
-                
+                </button>
               </div>
             </div>
-            <!-- If you want image with small animation on the side <div class="column mt-6" data-aos="fade-left">
-              <img
-                class="image has-image-centered stayright mt-4"
-                src=""
-                alt="showcase"
-                style="width: 50rem;"
-              />
-            </div> -->
-            
           </div>
         </div>
-        
       </div>
-    
       <div class="has-text-centered" data-tippy-content="Scroll Down">
-        <a href="#features"
-          ><i
-            class="fa-solid fa-circle-chevron-down fa-lg vert-move2"
-          ></i
-        ></a>
+        <a href="#features">
+          <i class="fa-solid fa-circle-chevron-down fa-lg vert-move2"></i>
+        </a>
       </div>
-      
-      <br>
+      <br />
     </section>
     <!-- Hero Section End -->
 
     <!-- Hero Waves Start -->
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#0c0d0d"
         fill-opacity="1"
@@ -174,38 +129,23 @@ and open the template in the editor.
         <h1 class="title lined">Features</h1>
         <div class="line line-center blurple"></div>
       </div>
-
       <!-- single feature start (Left) -->
       <div class="single-feature">
-        
-
         <div class="columns mt-6">
           <div class="column mr-6">
             <h4 class="title"><span class="blurple">Feature 1</span></h4>
-            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">
-              Details
-            </p>
+            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">Details</p>
           </div>
-          
         </div>
       </div>
       <!-- single feature end (Left) -->
 
       <!-- single feature start (Right) -->
       <div class="single-feature">
-        
-
         <div class="columns mt-6">
-          <div class="column" data-aos="fade-right">
-            
-          </div>
           <div class="column">
-            <h4 class="title">
-              <span class="has-text-primary">Feature 2</span>
-            </h4>
-            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">
-             Details
-            </p>
+            <h4 class="title"><span class="has-text-primary">Feature 2</span></h4>
+            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">Details</p>
           </div>
         </div>
       </div>
@@ -213,60 +153,38 @@ and open the template in the editor.
 
       <!-- single feature start (Left) -->
       <div class="single-feature">
-        
-
         <div class="columns mt-6">
           <div class="column mr-6">
-            <h4 class="title">
-              <span class="has-text-warning">Feature 3</span>
-            </h4>
-            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">
-              Details
-            </p>
+            <h4 class="title"><span class="has-text-warning">Feature 3</span></h4>
+            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">Details</p>
           </div>
-          
         </div>
       </div>
       <!-- single feature end (Left) -->
 
       <!-- single feature start (Right) -->
-      
       <div class="single-feature">
-        
-
         <div class="columns mt-6">
-          <div class="column" data-aos="fade-right">
-            
-          </div>
           <div class="column">
-            <h4 class="title">
-              <span class="has-text-info">Feature 4</span>
-            </h4>
-            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">
-              Details
-            </p>
+            <h4 class="title"><span class="has-text-info">Feature 4</span></h4>
+            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">Details</p>
           </div>
         </div>
       </div>
+      <!-- single feature end (Right) -->
+
+      <!-- single feature start (Left) -->
       <div class="single-feature">
-        
         <div class="columns mt-6">
           <div class="column mr-6">
-            <h4 class="title">
-              <span class="blurple">Feature 5</span>
-            </h4>
-            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">
-              Details
-            </p>
+            <h4 class="title"><span class="blurple">Feature 5</span></h4>
+            <p class="subtitle mt-3" style="font-family: 'Request Coffee', sans-serif">Details</p>
           </div>
-          
         </div>
       </div>
-      <div class="single-feature">
-        
-
-      <!-- single feature end (Right) -->
+      <!-- single feature end (Left) -->
     </section>
+    <!--
     <!-- Features Section End -->
 
     <!-- Invite Section Start -->
